@@ -1,0 +1,24 @@
+p {
+		background-color: Indigo;
+		color: Chartreuse;
+		text-decoration: underline;
+		text-align: center;
+		font-size: large;
+		text-shadow: 2px 2px #FF0000;
+	}
+h1 {
+	text-shadow: 5px 5px #00FFFF;
+	text-align: center;
+}
+ol {
+	list-style-type: upper-roman;
+	color: #FF7F50;
+	text-shadow: 2px 2px #6495ED;
+
+}
+
+ul {
+	list-style-type: square;
+	color: #FF1493;
+	text-shadow: 2px 2px #000000;
+}
