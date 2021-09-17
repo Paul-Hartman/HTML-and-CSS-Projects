@@ -100,6 +100,7 @@ HOVER TRANSLATE AND TRANSFORM EFFECTS
 /*---------------------------------------------
 ANIMATION EFFECT
 --------------------------------------------*/
+
 @keyframes race {
     0%, 100% {
         transform: translateY(0px);
@@ -109,6 +110,4 @@ ANIMATION EFFECT
         transform: translateY(330px);
     }
 }
-
-
     
