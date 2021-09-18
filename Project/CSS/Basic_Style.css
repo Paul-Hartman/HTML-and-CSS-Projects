@@ -75,7 +75,7 @@ HOVER TRANSLATE AND TRANSFORM EFFECTS
     background-image: url("../Images/Icons/icons.png");
     transform: scale(.5);
     animation-name: race;
-    animation-duration: 2,5s;
+    animation-duration: 2.5s;
     animation-iteration-count: infinite;
     animation-timing-function: cubic-bezier(2.5,.2, .3, 2);
 }
