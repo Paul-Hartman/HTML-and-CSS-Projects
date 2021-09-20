@@ -261,7 +261,7 @@ CONTACT STYLES
     font-family: 'Raleway' sans-serif;
 }
 
-.reservation input {
+.reservation input[type='text'] {
     font-size: 15px;
     outline: none;
     font-weight: 600;
@@ -277,4 +277,17 @@ CONTACT STYLES
     background: #13161b;
     box-shadow: inset 0px 3px 0px 0px rgba(5, 5, 5, 0.15);
     font-family: 'Raleway' sans-serif;
+}
+
+.reservation input[type='text']:hover {
+    box-shadow: 0 0 18px rgba(100, 65, 0, .8);
+
+}
+
+.form-spacer {
+    padding: 30px 39px;
+}
+
+.terms {
+    margin: 30px 1px 0 0;
 }
