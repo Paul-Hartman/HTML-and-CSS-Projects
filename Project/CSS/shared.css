@@ -138,3 +138,11 @@ section {
     position: fixed;
     z-index: 100;
 }
+
+/*==================================
+HOME SECTION STYLES
+====================================*/
+
+#home {
+    background: url(../Images/Backgroundimage.jpg) no-repeat 50% 50%;
+}
