@@ -169,7 +169,7 @@ HOME SECTION STYLES
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     line-height: 2;
     font-weight: 900;
-    border: 5px double #fff;
+    border: 5px groove #fff;
     padding: 10px;
 }
 
@@ -368,7 +368,7 @@ MENU SELECTION ANIMATION
     padding: 15px 4%;
     border: 1px solid #9d9fa2;
     box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.5);
-    border-radius: 6px;
+    border-radius: 9px;
     cursor: pointer;
     transition-property: background;
     transition-duration: .4s;
@@ -431,7 +431,7 @@ MENU SELECTION ANIMATION
 .photo-overlay{
     opacity:0;
     transition: opacity .5s;
-    border-radius: 10px;
+    border-radius: 11px;
     cursor: pointer;
 }
 
