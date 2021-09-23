@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .center {
+            display: block;
+            margin: auto;
+            width: 50%;
+            filter: hue-rotate(90deg);
+            border: 5px  double rgb(233, 37, 70);
+            border-radius: 100px 210px;
+        }
+        #tictactoe {
+            border-radius: 1px;
+            width: 25%;
+            align-self: center;
+        }
+        #tictactoe td, #tictactoe th {
+            border: 5px dotted rgb(45, 100, 100);
+
+
+        }
+
+        #tictactoe th {
+            padding-top: 15px;
+            padding-bottom: 30px;
+            text-align: right;
+            background-color: greenyellow ;
+            color: hotpink;
+        }
+
+       .video-container
+
+        .container{
+            position: relative;
+            text-align: center;
+            color: hotpink;
+        }
+
+        .bottom-left {
+            position: absolute;
+            bottom: 8rem;
+            left: 16rem;
+        }
+
+        .bottom-right {
+            position: absolute;
+            bottom: 8em;
+            right: 16em;
+        }
+
+        .top-left{
+            position: absolute;
+            top: 8rem;
+            left: 16rem;
+        }
+
+        .top-right {
+            position: absolute;
+            top: 8em;
+            right: 16em;
+        }
+
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: hotpink;
+            position: relative;
+            top: 3px;
+            width: 100%;
+
+        }
+        .navbar a {
+            float: right;
+            display: block;
+            color: indigo;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: large;
+        }
+        .navbar a:hover {
+            background: #ddd;
+            color: black;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .column {
+            float: left;
+            width: 50%;
+            padding: 10px;
+            height: 300px;
+            border: 10px double purple;
+            color: rosybrown;
+            
+        }
+    
+
+        .row:after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        p:hover {
+            cursor: ns-resize;
+            color: red;
+            border: 20px dotted red;
+        }
+
+    
+    </style>
+</head>
+<body>
+
+    <div class="navbar"> 
+        <a href="#home">Home</a>
+        <a href="#tictactoe">Tictactoe</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <div id="home" class="container">
+
+        <img src="https://cdn.britannica.com/60/8160-050-08CCEABC/German-shepherd.jpg" alt="woops" class="center">
+        <div class="bottom-left"> bork!</div>
+        <div class="bottm-right"> bork!</div>
+        
+        <div class="top-left"> bork!</div>
+        <div class="top-right"> bork!</div>
+    </div>
+
+    <table id="tictactoe">
+        <tr>
+            <th>tic</th>
+            <th>tac</th>
+            <th>toe</th>
+        </tr>
+        <tr>
+            <td class="overlay">
+                <p class='text'>X</p>
+            </td>
+            <td class="overlay">
+                <p class='text'>X</p>
+            </td>
+            <td class="overlay">
+                <p class='text'>X</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="overlay">
+                <p class='text'>X</p>
+            </td>
+            <td class="overlay">
+                <p class='text'>X</p>
+            </td>
+            <td class="overlay">
+                <p class='text'>X</p>
+            </td>
+        </tr>
+            <td class="overlay">
+                <p class='text'>X</p>
+            </td>
+            <td class="overlay">
+                <p class='text'>X</p>
+            </td>
+            <td class="overlay">
+                <p class='text'>X</p>
+            </td>
+        </tr>
+
+    </table>
+
+    <div class="video-container">
+        <video autoplay muted loop src='./pexels-moe-magners-5271480.mp4' type=video/mp4></video>
+        <div class="centered"> mmmmmmmmmmmmmmmmmmmmmmm</div>
+
+    </div>
+
+    <div class="row">
+        <div class="column"><p>wooooooop wooooop wooop woop</p></div>
+        <div class="column"><p>changech chagenc chaeh s chh whhgd</p></div>
+
+    </div>
+<footer id="contact" style="text-align: center;">
+    <p><strong>aliendog.com boop booop &copy;  </strong></p>
+</footer>
+    
+</body>
+</html>
