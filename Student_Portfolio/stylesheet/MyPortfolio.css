@@ -8,7 +8,7 @@ h1  {
     text-transform: uppercase;
     font-family: monospace 'Courier New', Courier, monospace;
     text-align: center;
-    margin-top: 5%;
+    margin-top: 1%;
     color: black;
 }
 
@@ -20,7 +20,7 @@ h1:hover {
 }
 
 .white-text {
-    color: black;
+    color: white;
 }
 
 p {
@@ -41,14 +41,10 @@ p:hover  {
     text-align: center;
 }
 
-.center:hover {
-    transition: tranform 2s;
-    transform: scale(1.1);
-}
 
 
 a {
-    color: blue;
+    color: black;
 }
 
 
@@ -82,6 +78,7 @@ footer  {
     padding: 1px;
     background-color: black;
     color: chartreuse;
+    text-align: center;
 }
 
 /****END OF BASIC STYLING****/
@@ -117,4 +114,157 @@ footer  {
     position: relative;
     -webkit-animation: moveNavText 5.75s;
     animation: moveNavText 5.75s;
+}
+
+@keyframes moveNavText  {
+    from{top: -100vw;}
+    to{top: 0vw;}
+}
+
+@media screen and (max-width: 576px) {
+    .navbar a {
+        width: 25%;
+        font-size: 12px;
+    }
+}
+
+.navbar a:hover {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+.navbar a.active  {
+    background-color: chartreuse;
+    color: black;
+}
+
+/********END OF NAVBAR STYLING*******/
+
+/********VIDEO STYLING*****/
+
+#Video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    z-index: -1;
+    max-width: 100%;
+}
+
+
+@media screen and (max-width: 570px) {
+    #Video {
+        display: none;
+    }
+    
+}
+
+.video-text {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    -webkit-animation: moveVideoText 5.75s;
+    animation: moveVideoText 5.75s;
+
+}
+
+@keyframes moveVideoText  {
+    from  {top: -100vw;}
+    to  {top: 0vw;}
+}
+/*******END OF VIDEO STYLING*******/
+
+
+/********TABLE STYLING***********/
+* {
+    box-sizing: border-box;
+}
+
+.column_1  {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 3%;
+    height: 400px;
+    background-color:chartreuse;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 576px) {
+    column_1  {
+        overflow: auto;
+    }
+}
+
+.column_2  {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 1.9%;
+    height: 400px;
+    background-color: black;
+}
+
+.column_tall {
+    padding-top: 3.5%;
+    height: 450px;
+}
+
+.Row:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/*********END OF TABLE STYLING********/
+
+/**********CONTACT FORM STYLING*********/
+
+input[type=text]  {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: 'Courier New', Courier, monospace bold;
+}
+
+input[type=text]:hover  {
+    box-shadow: 0  0  5px  rgb(53, 192, 127)  inset;
+}
+
+input[type=submit] {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Courier New', Courier, monospace bold;
+}
+
+input[type=submit]:hover {
+    background-color: chartreuse;
+    color: black;
+    transform: scale(1.2);
+    transition: transform 1.5s;
+    box-shadow: 0  0 10px  black;
+}
+
+
+/*****END OF CONTACT FORM STYLING******/
+
+
+.foot  {
+    text-align: center;
 }
