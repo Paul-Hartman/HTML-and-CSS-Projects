@@ -10,9 +10,10 @@
 <body class="background">
     <div class="navbar">
         <a class="active" href="#Home">Home</a>
+        <a href="#Slideshow">Slideshow</a>
         <a href="#About">About</a>
         <a href="#GitHub">Github</a>
-        <a href="#Contact">Contact</a>
+        <a onclick="openForm()" ondblclick="closeForm()">Contact</a>
     </div>
 
     <br>
@@ -47,6 +48,66 @@
             
              </p>
          </strong>
+     </div>
+
+     <!--Slideshow-->
+     <div id="Slideshow">
+         <div id="Slideshow_Background">
+             <div id="Slideshow_Container">
+
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="./images/HTML_CSS_and_JavaScript.jpeg" alt="Photo did not display">
+                    <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
+                </div>
+
+    
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="./images/Python.png" alt="Photo did not display">
+                    <div class="text">Python, .NET Framework, ASP.NET, MVC,</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="./images/C_Sharp_and_Dot_NET.png" alt="Photo did not display">
+                    <div class="text">C++, C#</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="./images/unity.png" alt="Photo did not display">
+                    <div class="text">Unity</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="./images/unreal Engine.png" alt="Photo did not display">
+                    <div class="text">Unreal Engine</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="./images/SQL_and_Database.jpg" alt="Photo did not display">
+                    <div class="text">back end development, databases and SQL.</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img class="Slideshow_Images" src="./images/mail-icon-black.jpg" alt="Photo did not display">
+                    <div class="text"><a class="white-head" onclick="openForm()" href="#Contact"></a> Contact me!</div>
+                </div>
+                
+                <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+
+             </div>
+             <br>
+
+             <!--Dots-->
+             <div style="text-align: center;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+            </div>
+         </div>
      </div>
 
      <!--About-->
@@ -86,27 +147,25 @@
         </div>
     </div>
 
-
-    <!--Contact Section-->
-    <div class="Row" id="Contact">
-        <!--Contact Image, Left Column-->
-        <div class="column_2 column_tall" >
-            <img src="./images/future-2942885_1920.jpg" alt="Contact Image">
-        </div>
-        <!--Contact Form, Right Column-->
-        <div class="column_1 column_tall">
-            <h1>Contact</h1>
+    <!--Contact Form-->
+    <div id="Contact">
+        <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+        <div class="form-popup" id="myForm">
             <form action="https://formspree.io/f/mwkayjpa" method="POST">
-                <label>Name:</label>
-                    <input type="text" placeholder="Please enter your name here">
-                <label>Email:</label>
-                    <input type="text" id="Email" name="Email" placeholder="Please enter your Email here">
-                <label>Message:</label>
-                    <input type="text" id="Message" name="Message" placeholder="Please write your message here">
-                    <input type="submit" value="SUBMIT">
-             </form>
+                <label for="name">Name:</label>
+                <input type="text" placeholder="Please enter your name here" name="name" required>
+                <label for="email">Email:</label>
+                <input type="text" id="Email" name="Email" placeholder="Please enter your Email here" name="email" required>
+                <label for="message">Message:</label>
+                <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+
+                <button type="submit" class="btn">SUBMIT</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+            </form>
         </div>
     </div>
+
+
 
     <!--Footer Section-->
     <footer>
@@ -116,6 +175,6 @@
     </footer>
 
 
-    
+  <script src="./JS/Portfolio_Website.js"></script>
 </body>
 </html>
