@@ -32,7 +32,7 @@ h1  {
 h1:hover {
     
    text-shadow: 2px 2px 2px chartreuse;
-    transform: scale(1.1);
+    transform: scale(1.01);
     transition: transform 1s;
     cursor: pointer;
 }
@@ -62,7 +62,7 @@ p:hover  {
 
 .center:hover {
     transition: transform 2s;
-    transform: scale(1.1);
+    transform: scale(1.01);
 }
 
 
@@ -377,6 +377,7 @@ footer  {
 .form-popup {
     border: 3px solid chartreuse;
     z-index: 8;
+    background-color: black;
     display: none;
     position: fixed;
     bottom: .5vw;
@@ -389,13 +390,14 @@ footer  {
     background-color: black;
 }
 
-.form-container input[type=text] {
+ input[type=text] {
     width: 100%;
     padding: .93vw;
     margin: .6vw 0 .6vw 0;
     border: none;
     background-color: black;
-    font-size: 1vw;
+    color: white;
+    font-size: 3vw;
 }
 
 button {
@@ -410,27 +412,29 @@ button {
 }
 
 button:hover, .form-container .btn:hover {
-    color: black;
+    color: white;
     background-color: chartreuse;
     transition-duration: 1s;
     -webkit-transition-duration: 1s;
     border-color: chartreuse;
 }
 
-.form-container .btn {
-    background-color: white;
-    color: black;
-    border-color: black;
+  .btn {
+    background-color: black;
+    color: white;
+    border: 3px outset;
+    border-color: black ;
     margin-bottom: 1vh;
 }
 
-.form-container .cancel {
+ .cancel {
     background-color: black;
     color: white;
+    border: 3px outset;
     border-color: black;
 }
 
-.form-container .cancel:hover {
+ .cancel:hover {
     color: black;
     background-color: red;
     transition-duration: 1s;

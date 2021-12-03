@@ -17,7 +17,7 @@ function plusSlides(n) {
 }
 
 //this function changes the slide when the dots are clicked
-function currentSlide() {
+function currentSlide(n) {
     showSlides(slideIndex = n);
 }
 
